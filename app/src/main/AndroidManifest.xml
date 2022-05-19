@@ -29,13 +29,16 @@
             android:theme="@style/Theme.Drinking.NoActionBar" />
         <activity
             android:name=".SuccessOrderActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/Theme.Drinking.NoActionBar" />
         <activity
             android:name=".PlaceYourOrderActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/Theme.Drinking.NoActionBar" />
         <activity
             android:name=".RestaurantMenuActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/Theme.Drinking.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"/>

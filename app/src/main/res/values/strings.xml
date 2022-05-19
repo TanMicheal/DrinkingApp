@@ -41,5 +41,6 @@
     <string name="delivery_charge">Phí vận chuyển</string>
     <string name="total">Tổng tiền</string>
     <string name="place_your_order">Đặt hàng</string>
+    <string name="done">Hoàn thành</string>
 
 </resources>

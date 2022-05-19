@@ -22,12 +22,19 @@ class PlaceYourOrderActivity : AppCompatActivity() {
     var placeYourOrderAdapter: PlaceYourOrderAdapter? = null
     var isDeliveryOn: Boolean = false
 
+    //FirebaseAuth
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_place_your_order)
 
+        //init firebaseAuth
+        firebaseAuth = FirebaseAuth.getInstance()
+
         // setup actionbar
         val restaurantModel: RestaurentModel? = intent.getParcelableExtra("RestaurantModel")
+        setSupportActionBar(findViewById(R.id.toolbar))
         val actionbar: ActionBar? = supportActionBar
         actionbar?.setTitle(restaurantModel?.name)
         actionbar?.setSubtitle(restaurantModel?.address)

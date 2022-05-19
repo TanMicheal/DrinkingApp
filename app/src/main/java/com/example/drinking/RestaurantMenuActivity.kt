@@ -30,6 +30,7 @@ class RestaurantMenuActivity : AppCompatActivity(), MenuListAdapter.MenuListClic
 
         // setup actionbar
         val restaurantModel = intent?.getParcelableExtra<RestaurentModel>("RestaurantModel")
+        setSupportActionBar(findViewById(R.id.toolbar))
         val actionBar: ActionBar? = supportActionBar
         actionBar?.setTitle(restaurantModel?.name)
         actionBar?.setSubtitle(restaurantModel?.address)

@@ -15,6 +15,7 @@ class SuccessOrderActivity : AppCompatActivity() {
 
         // setup actionbar
         val restaurantModel: RestaurentModel? = intent.getParcelableExtra("RestaurantModel")
+        setSupportActionBar(findViewById(R.id.toolbar))
         val actionbar: ActionBar? = supportActionBar
         actionbar?.setTitle(restaurantModel?.name)
         actionbar?.setSubtitle(restaurantModel?.address)
