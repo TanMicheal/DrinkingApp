@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Drinking</string>
+
+    <!--Login Activity-->
+    <string name="title_login">Đăng Nhập</string>
+    <string name="caption_login">Đăng nhập vào tài khoản của bạn</string>
+    <string name="edit_text_email">Nhập Email</string>
+    <string name="edit_text_password">Nhập mật khẩu</string>
+    <string name="button_login">Đăng nhập</string>
+    <string name="have_no_account">Chưa có tài khoản? <b>Đăng kí ngay</b>.</string>
+
+    <!--Register Activity-->
+    <string name="title_register">Đăng Kí</string>
+    <string name="caption_register">Đăng kí tài khoản</string>
+    <string name="edit_text_confirm_password">Nhập lại mật khẩu</string>
+    <string name="edit_text_firstname">Tên</string>
+    <string name="edit_text_lastname">Họ</string>
+    <string name="button_register">Đăng kí</string>
+    <string name="already_have_account">Đã có tài khoản? <b>Đăng nhập</b>.</string>
+
+    <!--Main  Activity-->
+    <string name="logged_in">You are signed up as Email</string>
+    <string name="email_text">Email</string>
+    <string name="name_text">Name</string>
+
+    <!--Sign Out-->
+    <string name="button_logout">Đăng xuất</string>
+
+    <!--Main  UI-->
+    <string name="customer_details">Thông tin khách hàng</string>
+    <string name="pickup">Lấy tại chỗ</string>
+    <string name="delivery">Giao hàng</string>
+    <string name="enter_your_name">Nhập tên của bạn</string>
+    <string name="enter_your_address">Nhập địa chỉ</string>
+    <string name="enter_your_city">Nhập thành phố</string>
+    <string name="enter_phone_number">Nhập số điện thoại</string>
+    <string name="card_details">Thẻ ngân hàng</string>
+    <string name="enter_card_number">Nhập số thẻ ngân hàng</string>
+    <string name="total_item_in_card">số lượng sản phẩm</string>
+    <string name="sub_total">Thành tiền</string>
+    <string name="delivery_charge">Phí vận chuyển</string>
+    <string name="total">Tổng tiền</string>
+    <string name="place_your_order">Đặt hàng</string>
+
+</resources>
