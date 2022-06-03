@@ -108,7 +108,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
             //user is already logged in
-            startActivity(Intent(this, SplashActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

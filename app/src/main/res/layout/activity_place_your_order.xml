@@ -263,7 +263,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvTotal"
-            android:text="@string/place_your_order"
+            android:text="Đặt hàng"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/white"

@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Filter
+import android.widget.Filterable
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.navigation.findNavController
@@ -32,7 +35,7 @@ class MainActivity : AppCompatActivity(), RestaurantListAdapter.RestaurantListCl
 
         //init firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
-
+//        checkUser()
         setSupportActionBar(findViewById(R.id.toolbar))
         val actionBar: ActionBar? = supportActionBar
 //        actionBar?.hide()
@@ -74,6 +77,24 @@ class MainActivity : AppCompatActivity(), RestaurantListAdapter.RestaurantListCl
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menutoolbar,menu)
+
+        val menuItem = menu!!.findItem(R.id.searchView)
+
+        val searchView = menuItem.actionView as SearchView
+
+        searchView.maxWidth = Int.MAX_VALUE
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(p0: String?): Boolean {
+                return true
+            }
+
+            override fun onQueryTextChange(p0: String?): Boolean {
+                return true
+            }
+
+        })
+
         return true
     }
 
@@ -84,8 +105,14 @@ class MainActivity : AppCompatActivity(), RestaurantListAdapter.RestaurantListCl
             firebaseAuth.signOut()
             startActivity(Intent(this,LoginActivity::class.java))
             finish()
+        } else if (itemId == R.id.changeUserProfile) {
+            startActivity(Intent(this,ChangeUserProfileActivity::class.java))
+            finish()
+        } else if (itemId == R.id.UserProfile) {
+            startActivity(Intent(this,UserProfileActivity::class.java))
+            finish()
         } else {
-            Toast.makeText(this, "Can not logout, something wrong", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Lỗi đăng nhập", Toast.LENGTH_SHORT).show()
         }
         return true
     }

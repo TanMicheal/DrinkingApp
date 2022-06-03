@@ -35,6 +35,29 @@
         <entry key="..\:/Downloads/SetUp/Android/lesson/DrinkingProject/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
         <entry key="..\:/Downloads/SetUp/Android/lesson/DrinkingProject/app/src/main/res/menu/menutoolbar.xml" value="0.20416666666666666" />
         <entry key="..\:/Downloads/SetUp/Android/lesson/DrinkingProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/button_bg.xml" value="0.1945" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_add_circle.xml" value="0.1625" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_launch_background.xml" value="0.1005" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1945" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_remove_circle.xml" value="0.1625" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/drawable/ic_splash.xml" value="0.1625" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_change_user_profile.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_main.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_main_backup.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_place_your_order.xml" value="0.12" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_register.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_restaurant_menu.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_splash.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_success_order.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/activity_user_profile.xml" value="0.12" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/dialog_wait.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/placeyourorder_list_row.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/recycler_restaurant_list_row.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/menu/menutoolbar.xml" value="0.225" />
+        <entry key="..\:/Users/tanht/demo/DrinkingApp-alex/DrinkingApp-alex/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1005" />
       </map>
     </option>
   </component>

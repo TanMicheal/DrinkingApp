@@ -1,7 +1,9 @@
 package com.example.drinking
 
+import android.app.Dialog
 import android.app.ProgressDialog
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -9,10 +11,14 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.drinking.databinding.ActivityRegisterBinding
+import com.example.drinking.model.UserModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -25,6 +31,11 @@ class RegisterActivity : AppCompatActivity() {
     //ProgressDialog
     private lateinit var progressDialog: ProgressDialog
 
+    private lateinit var auth: FirebaseAuth
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var storageReference: StorageReference
+    private lateinit var imageUri : Uri
+    private lateinit var dialog : Dialog
     //FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
     private var email = ""
@@ -131,8 +142,10 @@ class RegisterActivity : AppCompatActivity() {
 
                 //get current user
                 val firebaseUser = firebaseAuth.currentUser
+                databaseReference = FirebaseDatabase.getInstance().getReference("Users")
                 val email = firebaseUser!!.email
-
+                val firstname = binding.editTextTextFirstname.text.toString().trim()
+                val lastname = binding.editTextTextLastname.text.toString().trim()
                 //create user data in database
                 val userId = firebaseUser!!.uid
 //                val userModel = UserModel(firstName, lastName)
@@ -140,11 +153,23 @@ class RegisterActivity : AppCompatActivity() {
 //                database.child("users").child(userId).setValue(userModel)
 //                database.setValue("users")
 
-                Toast.makeText(this, "Account create with email $email", Toast.LENGTH_SHORT).show()
+                val user = UserModel(firstname,lastname)
+                if (userId != null){
+//
+                    databaseReference.child(userId).setValue(user).addOnCompleteListener {
+                        if (it.isSuccessful){
 
-                //open main activity
-                startActivity(Intent(this, MainActivityBackup::class.java))
-                finish()
+                            Toast.makeText(this, "Account create with email $email", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this, LoginActivity::class.java))
+                            finish()
+
+                        } else{
+
+//                            hideProgressBar()
+                            Toast.makeText(this@RegisterActivity, "Lỗi! Hồ sơ không được cập nhật", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
             .addOnFailureListener { e->
                 //sign up failed
@@ -152,6 +177,25 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Sign Up failed due to ${e.message}", Toast.LENGTH_SHORT).show()
             }
     }
+
+//    private fun hideProgressBar() {
+//        dialog.dismiss()
+//    }
+
+//    private fun uploadProfilePic() {
+//        imageUri = Uri.parse("android.resource://$packageName/${R.drawable.profile}")
+//        storageReference = FirebaseStorage.getInstance().getReference("User/"+auth.currentUser?.uid)
+//        storageReference.putFile(imageUri).addOnSuccessListener {
+//
+//            hideProgressBar()
+//            Toast.makeText(this@RegisterActivity, "Tải lên thành công", Toast.LENGTH_SHORT).show()
+//
+//        }.addOnFailureListener {
+//
+//            hideProgressBar()
+//            Toast.makeText(this@RegisterActivity, "Tải lên thất bại", Toast.LENGTH_SHORT).show()
+//        }
+//    }
 
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed() //go back to previous activity, when back button of actionbar is clicked

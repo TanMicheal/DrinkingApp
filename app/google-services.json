@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "619822292878",
-    "project_id": "drinking-9dc2a",
-    "storage_bucket": "drinking-9dc2a.appspot.com"
+    "project_number": "753299087604",
+    "firebase_url": "https://drinking-3578c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "drinking-3578c",
+    "storage_bucket": "drinking-3578c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:619822292878:android:db43d777e7d806d584cedf",
+        "mobilesdk_app_id": "1:753299087604:android:7f6f54f292f770166f3ea1",
         "android_client_info": {
           "package_name": "com.example.drinking"
         }
       },
       "oauth_client": [
         {
-          "client_id": "619822292878-lai14lbcjc4c4k0jve7s2e5dcfiufi90.apps.googleusercontent.com",
+          "client_id": "753299087604-k6mjpansp2h82sc56kj7g95b38d6cg4u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAIQLLam1NCbqQ0bMmc7nki3gMeOiWvIMk"
+          "current_key": "AIzaSyCUXXSe_GbhMYqnem_gJ-18jlvCEWZTkA8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "619822292878-lai14lbcjc4c4k0jve7s2e5dcfiufi90.apps.googleusercontent.com",
+              "client_id": "753299087604-k6mjpansp2h82sc56kj7g95b38d6cg4u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

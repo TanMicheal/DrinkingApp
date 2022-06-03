@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="@string/button_logout"
+        android:title="Đăng xuất"
         android:id="@+id/logoutBtn"/>
+    <item
+        android:title="Chỉnh sửa thông tin"
+        android:id="@+id/changeUserProfile"/>
+    <item
+        android:title="Thông tin của tôi"
+        android:id="@+id/UserProfile"/>
+    <item
+        android:id="@+id/searchView"
+        android:title="Search view"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+
+        />
 </menu>
