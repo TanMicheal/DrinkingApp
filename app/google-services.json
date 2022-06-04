@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "619822292878",
+    "firebase_url": "https://drinking-9dc2a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "drinking-9dc2a",
+    "storage_bucket": "drinking-9dc2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619822292878:android:6c0947a616324c6284cedf",
+        "android_client_info": {
+          "package_name": "vn.udn.vku.vkufinalproject.onlineshoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619822292878-i573hdee3iu7pvnrk6jsni7hbi5pl4hj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.udn.vku.vkufinalproject.onlineshoppingapp",
+            "certificate_hash": "db59d90d5876c6632c5bbf6f41821be65f40fc9c"
+          }
+        },
+        {
+          "client_id": "619822292878-lai14lbcjc4c4k0jve7s2e5dcfiufi90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIQLLam1NCbqQ0bMmc7nki3gMeOiWvIMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619822292878-lai14lbcjc4c4k0jve7s2e5dcfiufi90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
