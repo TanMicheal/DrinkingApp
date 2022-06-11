@@ -36,10 +36,7 @@ class HistoryAdapter(val context: Context?, private val paymentList: ArrayList<H
             holder.productNumber.text = paymentList[position].listOrder[0].productNumber.toString()
             holder.productPrice.text = decimalFormat.format(paymentList[position].listOrder[0].productPrice).toString().plus(" VNĐ")
             holder.totalPrice.text = decimalFormat.format(paymentList[position].listOrder[0].totalPrice).toString().plus(" VNĐ")
-            holder.statusCart.text = "Waiting for confirmation"
-
-
-
+            holder.statusCart.text = "Awaiting confirmation"
     }
 
     override fun getItemCount(): Int {

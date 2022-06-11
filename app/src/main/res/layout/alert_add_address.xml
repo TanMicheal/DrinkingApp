@@ -1,106 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
-
-    <EditText
-        android:id="@+id/txt_village"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounder_text"
-        android:hint="Enter your village"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:paddingStart="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_commnune" />
-
-    <EditText
-        android:id="@+id/txt_commnune"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounder_text"
-        android:hint="Enter your commune"
-        android:paddingStart="8dp"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_district" />
+    android:padding="40dp"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/txt_name"
-        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounder_text"
-        android:hint="Enter your name"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@drawable/input_round"
+        android:hint="@string/enter_your_name"
         android:inputType="text"
-        android:minHeight="48dp"
-        android:paddingStart="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_village" />
-
-    <EditText
-        android:id="@+id/txt_district"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounder_text"
-        android:hint="Enter your district"
-        android:paddingStart="8dp"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_province" />
+        android:elevation="20dp"/>
 
     <EditText
         android:id="@+id/txt_province"
-        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/rounder_text"
-        android:hint="Enter your province"
-        android:paddingStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_round"
+        android:hint="@string/enter_your_province"
+        android:padding="10dp"
+        android:elevation="20dp" />
+
+    <EditText
+        android:id="@+id/txt_district"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_round"
+        android:hint="Enter your district"
+        android:padding="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txt_commnune"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_round"
+        android:hint="Enter your commune"
+        android:padding="10dp"
         android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:elevation="20dp" />
+
+    <EditText
+        android:id="@+id/txt_village"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_round"
+        android:hint="Enter your village"
+        android:inputType="text"
+        android:padding="10dp"
+        android:elevation="20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:elevation="20dp">
+        <EditText
+            android:hint="@string/enter_your_province"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_round"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_oke_add_address"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/button_cancel_round"
         android:padding="8dp"
         android:text="ADD"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/txt_commnune"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txt_commnune"
-        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:elevation="20dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

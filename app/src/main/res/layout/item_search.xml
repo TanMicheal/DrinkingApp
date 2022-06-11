@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="10dp">
+    android:background="@color/app_background_color"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="16dp">
 
     <ImageView
         android:id="@+id/img_search"
@@ -19,8 +21,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/img_search"
-        android:text="Iphone X"
-        android:textColor="@color/teal_700"
+        android:text="Product"
+        android:textColor="@color/coffee"
         android:textSize="15sp" />
 
     <TextView
@@ -31,16 +33,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/img_search"
-        android:text="590.000 VND"
+        android:text="50.000 VND"
         android:textColor="@color/teal_700"
         android:textSize="15sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="5dp"
         android:layout_below="@+id/img_search"
-        android:background="#F40505">
-    </View>
+        android:layout_marginTop="16dp"
+        android:background="@color/colorDark" />
 
 </RelativeLayout>

@@ -9,19 +9,10 @@ import android.os.Handler
 import android.os.Looper
 import android.view.WindowInsets
 import android.view.WindowManager
-import android.widget.TextView
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import vn.udn.vku.vkufinalproject.onlineshoppingapp.R
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
-
-    lateinit var topAnim: Animation
-    private lateinit var bottomAnim:Animation
-    private lateinit var imageView: ImageView
-    private lateinit var app_name: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,31 +27,14 @@ class SplashActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-
-        initComponent()
-        animComponent()
         eventSplash()
     }
 
-    fun initComponent() {
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation)
-        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
-        imageView = findViewById(R.id.imageView2)
-        app_name = findViewById(R.id.app_name)
-    }
-
-    fun animComponent() {
-        imageView.animation = topAnim
-        app_name.animation = bottomAnim
-    }
-
-    fun eventSplash() {
+    private fun eventSplash() {
         Handler(Looper.getMainLooper()).postDelayed({
             val i = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(i)
             finish()
-        }, 5000)
+        }, 2000)
     }
-
-
 }

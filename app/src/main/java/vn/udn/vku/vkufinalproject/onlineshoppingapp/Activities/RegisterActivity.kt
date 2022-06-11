@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
@@ -19,12 +16,6 @@ import vn.udn.vku.vkufinalproject.onlineshoppingapp.Models.UserModel
 import vn.udn.vku.vkufinalproject.onlineshoppingapp.R
 
 class RegisterActivity : AppCompatActivity() {
-
-    private lateinit var imgcloud01: ImageView
-    private lateinit var imgcloud02: ImageView
-    private lateinit var imgcloud03: ImageView
-    private lateinit var imgcloud04: ImageView
-    private lateinit var animCloud: Animation
 
     private lateinit var txtUsername: EditText
     private lateinit var txtPassword: EditText
@@ -43,19 +34,11 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         initComponent()
-
-        animComponent()
         actionComponent()
 
     }
 
     private fun initComponent() {
-        imgcloud01 = findViewById(R.id.cloud_img01)
-        imgcloud02 = findViewById(R.id.cloud_img02)
-        imgcloud03 = findViewById(R.id.cloud_img03)
-        imgcloud04 = findViewById(R.id.cloud_img04)
-        animCloud = AnimationUtils.loadAnimation(this, R.anim.animcloud)
-
         txtUsername = findViewById(R.id.username_txt)
         txtPassword = findViewById(R.id.password_txt)
         txtEmail = findViewById(R.id.email_txt)
@@ -69,14 +52,6 @@ class RegisterActivity : AppCompatActivity() {
 
         dialog = ProgressDialog(this)
     }
-
-    private fun animComponent() {
-        imgcloud01.startAnimation(animCloud)
-        imgcloud02.startAnimation(animCloud)
-        imgcloud03.startAnimation(animCloud)
-        imgcloud04.startAnimation(animCloud)
-    }
-
     private fun getTextUsername(): String {
         return txtUsername.text.toString().trim()
     }

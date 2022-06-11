@@ -294,17 +294,6 @@ class ProfileActivity : AppCompatActivity() {
             }
     }
 
-    private fun setupToolbar() {
-        val toolbarProfile: Toolbar = findViewById(R.id.toolbar_profile)
-        setSupportActionBar(toolbarProfile)
-
-        val actionBar: ActionBar? = supportActionBar
-        actionBar?.setDisplayShowTitleEnabled(false)
-        actionBar?.setDisplayHomeAsUpEnabled(true)
-        actionBar?.setDisplayShowHomeEnabled(true)
-
-    }
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
@@ -320,6 +309,18 @@ class ProfileActivity : AppCompatActivity() {
         emailUser.text = userModel.email
         phoneUser.text = userModel.phone
         passwordUser.text = "***********"
+    }
+
+    private fun setupToolbar() {
+        val toolbarProfile: Toolbar = findViewById(R.id.toolbar_profile)
+        setSupportActionBar(toolbarProfile)
+
+        val actionBar: ActionBar? = supportActionBar
+        supportActionBar?.title = userModel.fullName + "'s Profile"
+        actionBar?.setDisplayShowTitleEnabled(true)
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        actionBar?.setDisplayShowHomeEnabled(true)
+
     }
 
     private fun getDataProfile() {
@@ -351,7 +352,7 @@ class ProfileActivity : AppCompatActivity() {
         btnEditPassword = findViewById(R.id.btn_edit_password)
         toolbarProfile = findViewById(R.id.toolbar_profile)
         btnShowHistory = findViewById(R.id.btn_show_history)
-        floatButton = findViewById(R.id.float_action)
+//        floatButton = findViewById(R.id.float_action)
         auth = FirebaseAuth.getInstance()
         database = FirebaseFirestore.getInstance()
         storageReference = FirebaseStorage.getInstance().reference

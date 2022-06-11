@@ -19,47 +19,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:flow_verticalBias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_cart"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/tv_total_price_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_background"
         android:padding="16dp"
-        android:background="@drawable/rounder_text"
-        android:text="Total Price: 0.000.000 VND"
-        android:textColor="#101010"
+        android:text="Total Price: 50.000 VND"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_cart" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcv_cart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_buy_now_cart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_total_price_cart" />
+        app:layout_constraintTop_toBottomOf="@+id/rcv_cart"
+        app:layout_constraintVertical_bias="0.5"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_buy_now_cart"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="16dp"
         android:background="@drawable/button_ok_round"
-        android:padding="8dp"
+        android:paddingHorizontal="34dp"
+        android:paddingVertical="8dp"
         android:text="Buy now"
+        android:textColor="@color/cardview_light_background"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_price_cart"
+        app:layout_constraintVertical_bias="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

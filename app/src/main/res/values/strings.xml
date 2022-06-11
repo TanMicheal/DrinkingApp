@@ -10,11 +10,16 @@
     <string name="mute">Mute</string>
     <string name="search">Search</string>
     <string name="exit">Exit</string>
-    <string name="continue_payment">CONTINUE PAYMENT</string>
+    <string name="continue_payment">Continue Payment</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="btn_login">Login</string>
-    <string name="btn_register">Register</string>
+    <string name="btn_register">Sign Up</string>
     <string name="enter_your_full_name">Enter your full name</string>
     <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="add_address">Add Address</string>
+    <string name="enter_your_province">Enter your province</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="product">Product</string>
+    <string name="category">Category</string>
 </resources>

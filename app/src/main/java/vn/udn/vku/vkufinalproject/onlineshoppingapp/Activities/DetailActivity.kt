@@ -55,8 +55,8 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
         initComponent()
-        setupToolbar()
         getData()
+        setupToolbar()
         setupDataComponent()
         actionComponent()
     }
@@ -175,7 +175,7 @@ class DetailActivity : AppCompatActivity() {
     private fun setupToolbar() {
         setSupportActionBar(findViewById(R.id.toolbar))
         val actionBar: ActionBar? = supportActionBar
-        supportActionBar?.title = "Detail product"
+        supportActionBar?.title = productModel.name
         actionBar?.setDisplayShowTitleEnabled(true)
         actionBar?.setDisplayHomeAsUpEnabled(true)
         actionBar?.setDisplayShowHomeEnabled(true)

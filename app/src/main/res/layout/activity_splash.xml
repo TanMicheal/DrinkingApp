@@ -9,43 +9,28 @@
     tools:context=".Activities.SplashActivity">
 
   <ImageView
-      android:id="@+id/shape"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/shape"
-      app:layout_constraintVertical_bias="0"
-      app:layout_constraintHorizontal_bias="0"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-  <pl.droidsonroids.gif.GifImageView
       android:id="@+id/imageView2"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:src="@drawable/go_shopping"
-      app:layout_constraintBottom_toBottomOf="parent"
+      android:paddingHorizontal="60dp"
+      android:src="@drawable/splash_highlandscoffee"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias=".4"
-      />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
       android:id="@+id/app_name"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:fontFamily="monospace"
-      android:text="ONLINE SHOP"
-      android:textSize="40dp"
+      android:fontFamily="@font/acme"
+      android:text="@string/app_name"
+      android:textAllCaps="true"
       android:textAlignment="center"
       android:textColor="@color/black"
+      android:textSize="35sp"
+      android:layout_marginBottom="70dp"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imageView2"
-      app:layout_constraintVertical_bias=".5" />
+      app:layout_constraintStart_toStartOf="parent" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>

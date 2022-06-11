@@ -3,11 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable-anydpi/ic_camera.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable-anydpi/ic_profile.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/bg_white.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/border_background.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/bottom_round.xml" value="0.151" />
         <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/button_cancel_round.xml" value="0.151" />
         <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/button_ok_round.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/category_round.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/ic_change.xml" value="0.151" />
         <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/input_round.xml" value="0.1325" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/minius.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/plus.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/rounder_cover.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/rounder_text.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/drawable/shopping_cart_order.xml" value="0.151" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_address.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_all_product.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_cart.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_detail.xml" value="0.18795289855072464" />
         <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_payment.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_profile.xml" value="0.18795289855072464" />
         <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/alert_add_address.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_address.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_all_product.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_cart.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_category.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_product_home.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_search.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/layout/item_slide.xml" value="0.18795289855072464" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/menu/item_bottom.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/menu/item_menu_toolbar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Downloads/DoAnCoSo/OnlineShoppingApp/app/src/main/res/menu/item_menu_toolbar_home.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

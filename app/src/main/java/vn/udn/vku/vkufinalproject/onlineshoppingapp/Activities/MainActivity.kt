@@ -70,7 +70,6 @@ class MainActivity : AppCompatActivity() {
         setupRcvProduct()
         setupImageUser()
         actionComponent()
-
     }
 
     private fun setupImageUser() {
@@ -114,7 +113,7 @@ class MainActivity : AppCompatActivity() {
 
         val itemSearch = menu!!.findItem(R.id.action_search)
         searchView = itemSearch.actionView as AutoCompleteTextView
-        searchView.hint = "What are you finding?"
+        searchView.hint = "Search"
         searchView.width = 800
 
         database.collection("AddToCart").document(auth.currentUser!!.uid)

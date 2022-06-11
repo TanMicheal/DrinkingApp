@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
-    android:elevation="4dp"
+    android:elevation="20dp"
     android:layout_margin="5dp">
 
     <LinearLayout
         android:padding="7dp"
-        android:background="#8DD8FA"
+        android:background="@drawable/input_round"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Date: "
+                android:text="Date:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Date"
+                android:text="Date"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Time: "
+                android:text="Time:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Time"
+                android:text="Time"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Product Name: "
+                android:text="Product:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Date: "
+                android:text="Product"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Product Price: "
+                android:text="Price:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -109,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Current Date: "
+                android:text="Price"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total Price "
+                android:text="Total Price:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total price "
+                android:text="Total price"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -150,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total Quantity "
+                android:text="Total Quantity:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
