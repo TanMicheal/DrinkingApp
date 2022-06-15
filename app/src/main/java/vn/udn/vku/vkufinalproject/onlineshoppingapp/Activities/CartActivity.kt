@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.widget.AppCompatButton
+import androidx.core.view.isVisible
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -51,8 +52,6 @@ class CartActivity : AppCompatActivity() {
             val intent = Intent(this, AddressActivity::class.java)
             startActivity(intent)
         }
-
-
     }
 
 
@@ -89,6 +88,7 @@ class CartActivity : AppCompatActivity() {
     private fun setupToolbar() {
         setSupportActionBar(findViewById(R.id.toolbar_cart))
         val actionBar: ActionBar? = supportActionBar
+        supportActionBar?.title = "Cart"
         actionBar?.setDisplayShowTitleEnabled(false)
         actionBar?.setDisplayHomeAsUpEnabled(true);
         actionBar?.setDisplayShowHomeEnabled(true);

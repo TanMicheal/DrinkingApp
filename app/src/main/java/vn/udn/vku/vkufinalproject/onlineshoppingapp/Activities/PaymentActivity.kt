@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.Toolbar
@@ -65,6 +66,7 @@ class PaymentActivity : AppCompatActivity() {
                     val col = database.collection("AddToCart").document(auth.currentUser!!.uid).collection("User")
                     val size = arrayListCart.size
                     deleteCollection(col,size)
+                    Toast.makeText(this, "Order Success, Thank you for your order!", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this, MainActivity::class.java))
 
                 }

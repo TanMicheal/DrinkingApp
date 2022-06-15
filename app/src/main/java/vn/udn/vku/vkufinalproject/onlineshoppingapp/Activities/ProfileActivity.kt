@@ -303,10 +303,10 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun setDataProfile() {
         Glide.with(this).load(userModel.coverImage).into(coverUser)
-        if (userModel.avtImage == "" || userModel.avtImage.isEmpty()) {
-            userModel.avtImage = "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
-        }
-        Glide.with(this).load(userModel.avtImage).into(avtUser)
+//        if (userModel.avtImage == "" || userModel.avtImage.isEmpty()) {
+//            userModel.avtImage = "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
+//        }
+        Glide.with(this).load(userModel.avtImage).error(R.drawable.ic_profile).into(avtUser)
         nameUser.text = userModel.fullName
         emailUser.text = userModel.email
         phoneUser.text = userModel.phone
@@ -318,7 +318,7 @@ class ProfileActivity : AppCompatActivity() {
         setSupportActionBar(toolbarProfile)
 
         val actionBar: ActionBar? = supportActionBar
-        supportActionBar?.title = userModel.fullName + "'s Profile"
+        supportActionBar?.title = "Profile"
         actionBar?.setDisplayShowTitleEnabled(true)
         actionBar?.setDisplayHomeAsUpEnabled(true)
         actionBar?.setDisplayShowHomeEnabled(true)

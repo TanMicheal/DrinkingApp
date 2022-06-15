@@ -78,10 +78,10 @@ class MainActivity : AppCompatActivity() {
             .addOnSuccessListener { result ->
                 for (document in result) {
                     userModel = document.toObject(UserModel::class.java)
-                    if (userModel.avtImage == "" || userModel.avtImage.isEmpty()) {
-                        userModel.avtImage = "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
-                    }
-                    Glide.with(this).load(userModel.avtImage).into(imageUser)
+//                    if (userModel.avtImage == "" || userModel.avtImage.isEmpty()) {
+//                        userModel.avtImage = "https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
+//                    }
+                    Glide.with(this).load(userModel.avtImage).error(R.drawable.ic_profile).into(imageUser)
                 }
             }
             .addOnFailureListener { exception ->
