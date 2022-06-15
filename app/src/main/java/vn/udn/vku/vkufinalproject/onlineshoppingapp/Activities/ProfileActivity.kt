@@ -189,7 +189,8 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun uploadCoverUserToFirebase(imageUri: Uri?) {
-        val filePath = "Cover Images Profile Users/" + "" + auth.currentUser!!.uid
+//        val filePath = "Cover Images Profile Users/" + "" + auth.currentUser!!.uid
+        val filePath = "coverImage/" + auth.currentUser!!.uid
         val fileRef = storageReference.child(filePath)
         fileRef.putFile(imageUri!!)
             .addOnSuccessListener {
@@ -220,7 +221,8 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun uploadAvtUserToFirebase(imageUri: Uri?) {
         //upload to fireStorage
-        val filePath = "Images Profile Users/" + "" + auth.currentUser!!.uid
+//        val filePath = "Images Profile Users/" + "" + auth.currentUser!!.uid
+        val filePath = "avtImage/" + auth.currentUser!!.uid
         val fileRef = storageReference.child(filePath)
         fileRef.putFile(imageUri!!)
             .addOnSuccessListener {
